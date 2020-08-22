@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --first-color: rgb(167, 7, 167);
+    --second-color:  rgb(184, 43, 43);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, var(--first-color), var(--second-color));
+    font-family: 'Bebas Neue', cursive;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-area{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .counter-area h1 {
+        font-size: 80px;
+        letter-spacing: 5px;
+        color: whitesmoke;
+    }
+
+    .counter-area .counter {
+        display: flex;
+    }
+
+.increment, .dicrement, .result{
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 60px;
+    border-radius:8px;
+    font-weight: 600;
+}
+
+.increment, .dicrement{
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+}
+.result{
+    background-color: white;
+    padding-left:100px ;
+    padding-right: 100px;
+    font-weight: 900;
+}
+
+.reset {
+    cursor: pointer;
+    background-color: tomato;
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius:8px;
+}
+
+footer {
+    margin-top: 90px;
+    font-size: 25px;
+}
+
+.rael {
+    color: whitesmoke;
+}
+
+.rael:hover {
+    color: tomato;
+}
+
+.marks {
+    color: tomato;
+}
+
+.marks:hover {
+    color: whitesmoke;
+}
+
+
+@media (max-width: 600px) {  
+    .counter {
+        flex-direction: column;
+    }
+    .increment, .dicrement {
+        padding: 2% 4%;
+        display: flex;
+        justify-content: center;
+    }
+    footer {
+        margin-top: 33px;
+        margin-bottom: 7px;
+    }
+}
+
+@media (max-height: 600px) {
+    .increment, .dicrement {
+        padding: 1% 2%;
+        font-size: 30px;
+    }
+}

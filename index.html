@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador</title>
+    
+</head>
+
+<body>
+
+    <section class="counter-area">
+
+        <div class="title">
+            <h1>Contador</h1>
+        </div>
+
+        <div class="counter">
+            <div class="increment" onclick="incrementar()">+</div>
+
+            <div class="result">0</div>
+
+            <div class="dicrement" onclick="decrementar()">–</div>
+        </div>
+        
+        <div class="reset" onclick="resetar()">Resetar</div>
+    
+    </section>
+
+    <footer>
+        <p>
+            Feito por <a class="rael" href="https://github.com/Israelfer" target="_blank">Israel</a> e <a class="marks" href="https://github.com/MarkusDev13" target="_blank">Markus</a> | ©2020
+        </p>
+    </footer>
+
+    <script>
+
+        let numero = 0
+
+        function incrementar() {
+
+            numero++
+
+            document.getElementsByClassName("result")[0].innerHTML = numero
+
+        }
+
+        function decrementar() {
+
+            numero--
+
+            document.getElementsByClassName("result")[0].innerHTML = numero
+        }
+
+        function resetar(){
+            numero = 0
+            document.getElementsByClassName("result")[0].innerHTML = numero
+        }
+
+    </script>
+
+</body>
+
+</html>
